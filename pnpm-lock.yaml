@@ -57,6 +57,9 @@ importers:
       aws-sdk:
         specifier: ^2.1643.0
         version: 2.1643.0
+      stripe:
+        specifier: ^15.12.0
+        version: 15.12.0
       uuid:
         specifier: ^10.0.0
         version: 10.0.0
@@ -2774,6 +2777,10 @@ packages:
 
   strip-literal@2.1.0:
     resolution: {integrity: sha512-Op+UycaUt/8FbN/Z2TWPBLge3jWrP3xj10f3fnYxf052bKuS3EKs1ZQcVGjnEMdsNVAM+plXRdmjrZ/KgG3Skw==}
+
+  stripe@15.12.0:
+    resolution: {integrity: sha512-slTbYS1WhRJXVB8YXU8fgHizkUrM9KJyrw4Dd8pLEwzKHYyQTIE46EePC2MVbSDZdE24o1GdNtzmJV4PrPpmJA==}
+    engines: {node: '>=12.*'}
 
   strnum@1.0.5:
     resolution: {integrity: sha512-J8bbNyKKXl5qYcR36TIO8W3mVGVHrmmxsd5PAItGkmyzwJvybiw2IVq5nqd0i4LSNSkB/sx9VHllbfFdr9k1JA==}
@@ -6903,6 +6910,11 @@ snapshots:
   strip-literal@2.1.0:
     dependencies:
       js-tokens: 9.0.0
+
+  stripe@15.12.0:
+    dependencies:
+      '@types/node': 20.14.4
+      qs: 6.11.0
 
   strnum@1.0.5: {}
 
